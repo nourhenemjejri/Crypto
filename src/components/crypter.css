@@ -1,0 +1,205 @@
+/* Parent container for form and image */
+.crypter-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* Adjust gap between the form and the image */
+  padding: 20px;
+  background-image: url("../image/R.jpg"); /* Added background image */
+  background-size: cover; /* Ensure the image covers the full container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+}
+
+/* Wrapper for the form and image to align them side by side */
+.form-image-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Adjust gap between form and image */
+  justify-content: center;
+}
+
+/* Form container */
+.form-container {
+  background: #f8f2f4; /* Soft nude background */
+  width: 80vw;
+  max-width: 1000px;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Image container */
+.image-container {
+  width: 60%; /* Increased width */
+  height: auto;
+  max-width: 90%; /* Adjusted for larger size */
+}
+
+/* Image styles */
+.immmm {
+  width: 100%;
+  height: auto;
+  max-height: 50vh; /* Allow the image to grow larger */
+  border-radius: 15px;
+}
+
+
+/* Form title */
+.crypter-title {
+  font-size: 34px;
+  color: #5d3e61; /* Deep violet for title */
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Input fields */
+.input-message,
+.input-key {
+  width: 95%;
+  max-width: 700px;
+  padding: 15px 20px;
+  margin: 15px auto;
+  font-size: 18px;
+  color: #5d3e61; /* Deep violet text */
+  background-color: #faf4f6; /* Light nude background */
+  border: 1px solid #d8c3d4; /* Soft violet border */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.input-message:focus,
+.input-key:focus {
+  border-color: #b18daf; /* Accent violet on focus */
+  box-shadow: 0 0 5px rgba(177, 141, 175, 0.5);
+}
+
+/* Placeholder styling */
+.input-message::placeholder,
+.input-key::placeholder {
+  font-style: italic;
+  color: #aaa;
+}
+
+/* Button group */
+.crypter-button-group {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Action buttons with violet nude colors */
+.crypter-action-button {
+  padding: 15px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff; /* White text */
+  background-color: #b18daf; /* Violet nude base color */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.crypter-action-button:hover {
+  background-color: #8e6f8e; /* Darker violet nude on hover */
+  transform: translateY(-2px);
+}
+
+.crypter-action-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific buttons for algorithms */
+.cesar {
+  background-color: #c8a6c7; /* Light violet nude */
+}
+
+.affine {
+  background-color: #b18daf; /* Medium violet nude */
+}
+
+.vigenere {
+  background-color: #a37ca4; /* Deeper violet nude */
+}
+
+/* Navigation buttons - centered */
+.navigation-buttons {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+}
+
+/* Home button - circular */
+.navigate-home-button {
+  width: 70px;
+  height: 70px;
+  padding: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #b18daf;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 50%; /* Circular shape */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navigate-home-button:hover {
+  background-color: #8e6f8e;
+  transform: scale(1.1); /* Slightly larger on hover */
+}
+
+.navigate-home-button:active {
+  background-color: #6f556e;
+  transform: scale(0.95);
+}
+
+/* Decrypter button - circular */
+.navigate-decrypter-button {
+  width: 70px; /* Match Home button size */
+  height: 70px;
+  padding: 0;
+  font-size: 16px; /* Slightly smaller text */
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #8e6f8e; /* Violet color */
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 50%; /* Circular shape */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navigate-decrypter-button:hover {
+  background-color: #6f556e;
+  transform: scale(1.1);
+}
+
+.navigate-decrypter-button:active {
+  background-color: #5d3e61;
+  transform: scale(0.95);
+}

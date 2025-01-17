@@ -1,0 +1,68 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("../image/R.jpg");
+  background-size: 100% 97%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding-top: -60%; /* Optional: Add padding to adjust content placement */
+}
+
+.security-image {
+  width: 60%; /* Increased width */
+  height: 40%; /* Height of the image */
+  object-fit: cover;  
+  border-radius: 15px; /* Rounded corners */
+}
+
+.home-title {
+  color: white;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Change the title text */
+.home-title::before {
+  content: "Bienvenue sur notre plateforme de cryptage des données"; /* Updated text */
+  font-size: 2rem;
+  text-align: center;
+}
+
+.button-group {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px; /* Adjust spacing between buttons */
+}
+
+/* Square buttons with rounded borders */
+.action-button {
+  width: 90px; /* Set width for square button */
+  height: 50px; /* Set height for square button */
+  padding: 0; /* Remove padding to fit content inside square */
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #25103d; /* Light violet background */
+  border: none;
+  border-radius: 12px; /* Rounded corners for square button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.action-button:hover {
+  background-color: #5a3e7b; /* Darker violet on hover */
+  transform: scale(1.1); /* Slightly larger on hover */
+}
+
+.action-button:active {
+  background-color: #221136; /* Even darker violet on active */
+  transform: scale(0.95); /* Slightly smaller on click */
+}
